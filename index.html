@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersise 10</title>
+</head>
+<body>
+    <script>
+        let random = Math.random();
+        let prompt1 = prompt("Enter first number");
+        let prompt2 = prompt("Enter second number");
+        let prompt3 = prompt("Enter the operation");
+        
+        let obj1 = {
+            "+": "-",
+            "*": "+",
+            "/": "*",
+            "-": "/"
+        }
+
+        if (random > 0.1) {
+            alert(`The result is ${eval(`${prompt1} ${prompt3} ${prompt2}`)}`);
+            console.log(`The result is ${eval(`${prompt1} ${prompt3} ${prompt2}`)}`);
+        } else {
+            prompt3 = obj1[prompt3];
+            alert(`The result is ${eval(`${prompt1} ${prompt3} ${prompt2}`)}`);
+            console.log(`The result is ${eval(`${prompt1} ${prompt3} ${prompt2}`)}`);
+        }
+
+    </script>
+</body>
+</html>
